@@ -30,8 +30,9 @@ internal class Program
         Console.WriteLine(_date.WithSubString());
         Console.WriteLine(_date.WithSpan());
       
-
-         BenchmarkRunner.Run<SpanPerformanceBenchmark>(new CustomConfig());
+        Console.WriteLine("Click ==> Enter <== to see the benchmark .....");
+        Console.ReadKey();
+        BenchmarkRunner.Run<SpanPerformanceBenchmark>(new CustomConfig());
     }
 }
 
